@@ -120,12 +120,12 @@ a {
     margin: 0 auto;
 }
 
-.corazon {
+#corazon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 70px;
+    width: 120px;
     cursor: pointer;
     z-index: 10;
 }
