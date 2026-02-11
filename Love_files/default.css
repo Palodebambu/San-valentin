@@ -112,15 +112,31 @@ a {
   height: 500px;
   transform: translate(-50%, -50%);
 }
+.container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.corazon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    cursor: pointer;
+    z-index: 10;
+}
 
 .foto {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 20px;
-  position: absolute;
-  box-shadow: 0 0 20px rgba(255,0,100,0.6);
-  pointer-events: none;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 20px hotpink;
+    transition: 0.5s;
 }
 
 .f1 { top: 0; left: 190px; }
