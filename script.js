@@ -57,8 +57,21 @@
         var offset = canvas.offset(), x, y;
         x = e.pageX - offset.left;
         y = e.pageY - offset.top;
-        if (seed.hover(x, y)) { 
-            document.getElementById("inicio").style.display = "none";
+        if (seed.hover(x, y)) {
+            var inicio = document.getElementById("inicio");
+            if (inicio) {
+                inicio.style.opacity = "0";
+                setTimeout(function(){
+                    inicio.style.display = "none";
+            }, 500);
+    }
+
+    hold = 0;
+    canvas.unbind("click");
+    canvas.unbind("mousemove");
+    canvas.removeClass('hand');
+}
+
             hold = 0;
             canvas.unbind("click");
             canvas.unbind("mousemove");
