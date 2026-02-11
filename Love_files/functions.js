@@ -58,16 +58,15 @@ function timeElapse(date) {
 }
 $(document).ready(function () {
 
-    $(".corazon").click(function () {
+    $("#corazon").click(function () {
 
-        $(".foto").fadeOut(800);
+        $("#inicio").fadeOut(1000);
+        $("#wrap").fadeIn(1500);
 
-        $(".container").fadeOut(1000);
-
-        $("#canvas").fadeIn(1000);
     });
 
 });
+
 $(document).ready(function () {
 
     $(".corazon").click(function () {
