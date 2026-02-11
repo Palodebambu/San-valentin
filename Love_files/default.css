@@ -113,9 +113,44 @@ a {
 }
 
 #inicio p {
+  transition: opacity 0.5s ease;
   font-size: 18px;
   opacity: 0.85;
 }
+#inicio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.circulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+}
+
+.foto {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  box-shadow: 0 0 20px rgba(255,0,100,0.6);
+  pointer-events: none;
+}
+
+.f1 { top: 0; left: 190px; }
+.f2 { top: 90px; right: 0; }
+.f3 { bottom: 90px; right: 0; }
+.f4 { bottom: 0; left: 190px; }
+.f5 { bottom: 90px; left: 0; }
+.f6 { top: 90px; left: 0; }
 
 @media (max-width: 600px) {
   .collage img {
