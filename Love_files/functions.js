@@ -56,3 +56,16 @@ function timeElapse(date) {
         "<span class=\"digit\">" + seconds + "</span> segundos";
     $("#clock").html(result);
 }
+$(document).ready(function () {
+
+    $(".corazon").click(function () {
+
+        $(".foto").fadeOut(800);
+
+        $(".container").fadeOut(1000);
+
+        $("#canvas").fadeIn(1000);
+    });
+
+});
+
