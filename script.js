@@ -57,7 +57,8 @@
         var offset = canvas.offset(), x, y;
         x = e.pageX - offset.left;
         y = e.pageY - offset.top;
-        if (seed.hover(x, y)) {
+        if (seed.hover(x, y)) { 
+            document.getElementById("inicio").style.display = "none";
             hold = 0;
             canvas.unbind("click");
             canvas.unbind("mousemove");
